@@ -14,4 +14,4 @@
 
 
 - 手机版本
-![手机版本](https://github.com/edward5419/zhejiang_univ_hacking_project/raw/main/fishing_site/readme_data/phone.jpg)
+![手机版本](https://github.com/edward5419/zhejiang_univ_hacking_project/blob/main/fishing_site/readme_data/phone.png)
