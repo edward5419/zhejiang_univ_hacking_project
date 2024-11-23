@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:latest
+    volumes:
+      - mysqlVol1:/var/lib/mysql
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=****
+      - MYSQL_DATABASE=testdb
+    ports:
+      - "33306:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  djangoapi1:
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - djangoVol1:/static
+    image: ****
+    ports:
+    - "8000:8000"
+    restart: unless-stopped
+    env_file:
+      - .env
+
+
+volumes:
+  mysqlVol1:
+  djangoVol1:
