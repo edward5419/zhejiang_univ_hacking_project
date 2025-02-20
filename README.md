@@ -9,6 +9,17 @@
 
 在钓鱼网站输入账号和密码，账号和密码就会传送到服务器的数据库。
 
+Zhejiang University Unified Identity Authentication Phishing Website
+This project is a group assignment for the Intelligent Web Platform Technology course (I handled the front-end and back-end development).
+The goal was to create a phishing website mimicking the school's authentication system to obtain the teaching assistant's school account and password, but it failed. ^^
+The technology stack used is as follows:
+
+Front-end: Flutter
+
+Back-end: Django, MySQL, Alibaba Cloud, Docker, Ubuntu
+
+When users enter their account and password on the phishing website, the information is transmitted to the server's database.
+
 - PC段钓网
 
   
